@@ -1,0 +1,15 @@
+{%extends "base1.html"%}
+
+{%block content%}
+
+<div class= 'jumbotron'>
+    <h1> What is the city you want the temperature for? </h1>
+    <p>Add a new city to our database!</p>
+    
+        <h1> Please type a city</h1>
+        <form action="{{url_for ('add_city')}}" method="post">
+        <input type="text" name="" value="">
+        <input type= "submit" name="" value="Enter">
+</form>
+</div>
+{%endblock%}
